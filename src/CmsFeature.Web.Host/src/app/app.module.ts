@@ -37,6 +37,14 @@ import { CreateUserDialogComponent } from '@app/users/create-user/create-user-di
 import { EditUserDialogComponent } from '@app/users/edit-user/edit-user-dialog.component';
 import { ChangePasswordComponent } from './users/change-password/change-password.component';
 import { ResetPasswordDialogComponent } from './users/reset-password/reset-password.component';
+// cms
+import { CmsComponent } from '@app/cms/cms.component';
+import { CreateCmsDialogComponent } from './cms/create-cms/create-cms-dialog.component';
+import { EditCmsDialogComponent } from './cms/edit-cms/edit-cms-dialog.component';
+// cms-page
+import { CmsPageComponent } from '@app/cms/cms-page.component';
+
+import { QuillModule } from 'ngx-quill'
 
 @NgModule({
   declarations: [
@@ -62,7 +70,13 @@ import { ResetPasswordDialogComponent } from './users/reset-password/reset-passw
     CreateUserDialogComponent,
     EditUserDialogComponent,
     ChangePasswordComponent,
-    ResetPasswordDialogComponent
+    ResetPasswordDialogComponent,
+    // cms
+    CmsComponent,
+    CreateCmsDialogComponent,
+    EditCmsDialogComponent,
+    // cms-page
+    CmsPageComponent
   ],
   imports: [
     CommonModule,
@@ -75,7 +89,8 @@ import { ResetPasswordDialogComponent } from './users/reset-password/reset-passw
     AppRoutingModule,
     ServiceProxyModule,
     SharedModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    QuillModule.forRoot()
   ],
   providers: [],
   entryComponents: [
@@ -88,7 +103,10 @@ import { ResetPasswordDialogComponent } from './users/reset-password/reset-passw
     // users
     CreateUserDialogComponent,
     EditUserDialogComponent,
-    ResetPasswordDialogComponent
+    ResetPasswordDialogComponent,
+    // cms
+    CreateCmsDialogComponent,
+    EditCmsDialogComponent,
   ]
 })
 export class AppModule {}

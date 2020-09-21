@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CmsFeature.Configuration;
+using CmsFeature.Web;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using CmsFeature.Configuration;
-using CmsFeature.Web;
 
 namespace CmsFeature.EntityFrameworkCore
 {

@@ -7,7 +7,7 @@ using CmsFeature.EntityFrameworkCore.Seed;
 namespace CmsFeature.EntityFrameworkCore
 {
     [DependsOn(
-        typeof(CmsFeatureCoreModule), 
+        typeof(CmsFeatureCoreModule),
         typeof(AbpZeroCoreEntityFrameworkCoreModule))]
     public class CmsFeatureEntityFrameworkModule : AbpModule
     {

@@ -1,4 +1,8 @@
-﻿/* Show Fieldset and Legend ==================== */
+﻿@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.bubble.css';
+@import '~quill/dist/quill.snow.css';
+
+/* Show Fieldset and Legend ==================== */
 .show-fieldset {
     margin: 10px;
     padding: 10px;
